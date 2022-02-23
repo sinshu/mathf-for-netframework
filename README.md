@@ -7,8 +7,8 @@ namespace System
 {
     public static class MathF
     {
-        public const float PI = 3.1415926535897931F;
-        public const float E = 2.7182818284590451F;
+        public const float PI = (float)Math.PI;
+        public const float E = (float)Math.E;
         public static float Abs(float value) => (float)Math.Abs(value);
         public static float Acos(float d) => (float)Math.Acos(d);
         public static float Asin(float d) => (float)Math.Asin(d);

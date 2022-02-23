@@ -74,7 +74,8 @@ public static class Program
 
     private static string GetFloatConst(string line)
     {
-        return line.Trim().Replace("double", "float").Replace(";", "F;");
+        var name = line.Trim().Split(' ')[3];
+        return "public const float " + name + " = (float)Math." + name + ";";
     }
 
     private static string GetMethodName(string line)
